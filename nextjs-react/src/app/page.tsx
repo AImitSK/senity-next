@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { type SanityDocument } from "next-sanity";
+import Button from './components/ibdButton';
 
 import { client } from "@/sanity/client";
 
@@ -26,6 +27,22 @@ export default async function IndexPage() {
               </li>
           ))}
         </ul>
+          <Button
+              color="#123456"
+              hoverColor="#000000"
+              size="medium"
+              link="/"
+          >
+              Klick mich
+          </Button>
+          <Button
+              color="#B0D3EF"
+              hoverColor="#000000"
+              size="large"
+              link="/"
+          >
+              Klick mich
+          </Button>
       </main>
   );
 }
